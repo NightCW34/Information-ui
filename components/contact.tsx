@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View, Text, Image } from "react-native";
 
 //Icons
-import UserLogo from "../assets/icons/user_icon.svg";
+
 import { FontAwesome } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -13,7 +13,7 @@ const Contact = () => {
     <View style={{ margin: 14 }}>
       <View style={styles.box}>
         <View style={styles.title_container}>
-          <UserLogo width={24} height={24} />
+          <FontAwesome name="user" size={24} color="#236CFC" />
           <Text style={styles.title}>Contact Information</Text>
           <View
             style={{
