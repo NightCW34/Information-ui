@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, ScrollView, View } from "react-native";
+import { ScrollView } from "react-native";
 
 //Import Custom Components
 import Contact from "./contact";
@@ -8,7 +8,7 @@ import Salary from "./salary";
 
 const Content = () => {
   return (
-    <ScrollView style={styles.scroll} showsVerticalScrollIndicator={false}>
+    <ScrollView showsVerticalScrollIndicator={false}>
       <Contact />
       <Summary />
       <Salary />
@@ -17,10 +17,3 @@ const Content = () => {
 };
 
 export default Content;
-
-const styles = StyleSheet.create({
-  scroll: {
-    width: "100%",
-    height: "100%",
-  },
-});
